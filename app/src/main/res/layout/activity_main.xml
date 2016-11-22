@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.asiatravel.atviewpager.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioRroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_01"
+            style="@style/MyStyle"
+            android:text="头条" />
+
+        <RadioButton
+            android:id="@+id/rb_02"
+            style="@style/MyStyle"
+            android:text="科技" />
+
+        <RadioButton
+            android:id="@+id/rb_03"
+            style="@style/MyStyle"
+            android:text="娱乐" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvLine"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/background_dark" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
